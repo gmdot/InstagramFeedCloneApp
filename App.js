@@ -3,7 +3,7 @@ import { SafeAreaView, StyleSheet, Text, View, StatusBar, ScrollView } from 'rea
 import StoriesMenu from './components/StoriesMenu'
 import TopMenu from './components/TopMenu';
 import Post from './components/Post';
-import ProfilePost from './components/ProfilePost';
+import BottomMenu from './components/BottomMenu';
 
 export default function App() {
   return (
@@ -18,10 +18,13 @@ export default function App() {
         </View>
     
         <ScrollView>
-          <ProfilePost/>
+          <Post/>
+          <Post/>
+          <Post/>
           <Post/>
         </ScrollView>
       </SafeAreaView>
+      <BottomMenu/>
     </>
   );
 }
